@@ -8,5 +8,17 @@ sources = {
     "Instagram": {
         "errorMsg": "Sorry, this page isn't available",
         "url": "https://www.instagram.com/{}",      
-    }
+    },
+    "Facebook": {
+        "errorMsg": "Sorry, this page isn't available",
+        "url": "https://www.Facebook.com/{}",      
+    },
+    "Instagram": {
+        "errorMsg": "Sorry, this page isn't available",
+        "url": "https://www.instagram.com/{}", 
+    },
+    "Instagram": {
+        "errorMsg": "Sorry, this page isn't available",
+        "url": "https://www.instagram.com/{}", 
+}
 }
