@@ -22,7 +22,7 @@ def hunt(name: str):
 
         try:
             response = requests.get(url, headers={ **headers, **source.get("headers", {}) })
-        except:
+        except requests.exceptions.RequestException:
             continue
 
         data = { "name": i, "url": source["url"].format(name) }
