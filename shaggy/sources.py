@@ -10,15 +10,21 @@ sources = {
         "url": "https://www.instagram.com/{}",      
     },
     "Facebook": {
-        "errorMsg": "Sorry, this page isn't available",
-        "url": "https://www.Facebook.com/{}",      
+        "url": "https://www.Facebook.com/{}",    
+        "api": "https://graph.facebook.com/{}/picture",
+        "errorCode": 404
     },
-    "Instagram": {
-        "errorMsg": "Sorry, this page isn't available",
-        "url": "https://www.instagram.com/{}", 
+    "GitHub": {
+        "errorCode": 404,
+        "url": "https://www.github.com/{}",
     },
-    "Instagram": {
-        "errorMsg": "Sorry, this page isn't available",
-        "url": "https://www.instagram.com/{}", 
-}
+    "GitLab": {
+        "errorMsg": "[]",
+        "url": "https://gitlab.com/{}",
+        "api": "https://gitlab.com/api/v4/users?username={}",
+    },
+    "Gitee": {
+        "errorCode": 404,
+        "url": "https://gitee.com/{}",
+    },
 }

@@ -19,11 +19,11 @@ def hunt(name: str):
 
     for i in tqdm(sources, desc="Fetching accounts", leave=False):
         source = sources[i]
-        url = source["url"].format(name)
+        url = source.get("api", source["url"]).format(name)
         response = requests.get(url, headers=headers)
 
-        data = { "name": i, "url": url }
-        if source.get("redirect", True) == False:
+        data = { "name": i, "url": source["url"].format(name) }
+        if source.get("redirect", True) is False:
             if len(response.history) == 0:
                 found.append(data)
         elif main := source.get("urlMain", None):
