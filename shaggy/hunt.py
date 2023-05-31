@@ -32,14 +32,14 @@ def hunt(name: str):
         elif main := source.get("urlMain", None):
             if main != response.url:
                 found.append(data)
-        elif url := source.get("errorUrl", None):
-            if url not in response.url:
+        elif errorURL := source.get("errorUrl", None):
+            if not (errorURL in response.url):
                 found.append(data)
         elif msg := source.get("errorMsg", None):
             if not (msg in response.content.decode("utf-8")):
                 found.append(data)
         else:
-            if 200 == response.status_code:
+            if response.status_code == 200:
                 found.append(data)
 
     print(f"[🌐] Found {colored(len(found), 'green', attrs=['bold'])} social media accounts for {colored(name, 'green', attrs=['bold'])} on the following platforms:\n")

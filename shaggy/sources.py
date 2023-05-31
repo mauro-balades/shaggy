@@ -107,7 +107,6 @@ sources = {
         "url": "https://{}.wordpress.com/",
     },
     "WordPressOrg": {
-        "errorUrl": "https://wordpress.org",
         "url": "https://profiles.wordpress.org/{}/",
     },
 }
