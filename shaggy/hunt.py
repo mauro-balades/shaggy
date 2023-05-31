@@ -16,7 +16,7 @@ def hunt(name: str):
     found = []
     print(f"[{colored('🔍', 'yellow', attrs=['bold'])}] Searching for social media accounts for username: {colored(name, 'green', attrs=['bold'])}\n")
 
-    for i in tqdm(sources, desc="Fetching accounts", leave=False):
+    for i in tqdm(sources, ascii=" =", leave=False):
         source = sources[i]
         url = source.get("api", source["url"]).format(name)
 

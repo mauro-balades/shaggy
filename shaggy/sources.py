@@ -10,7 +10,7 @@ sources = {
     #     "url": "https://www.instagram.com/{}",      
     # },
     "Facebook": {
-        "url": "https://www.Facebook.com/{}",    
+        "url": "https://www.facebook.com/{}",    
         "api": "https://graph.facebook.com/{}/picture",
     },
     "GitHub": {
