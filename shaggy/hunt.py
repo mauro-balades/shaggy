@@ -15,7 +15,7 @@ headers = {
 
 def hunt(name: str):    
     found = []
-    print(f"{colored('+', 'yellow', attrs=['bold'])} Searching for accounts with username {colored(name, 'green', attrs=['bold'])}\n")
+    print(f"[{colored('🔍', 'yellow', attrs=['bold'])}] Searching for social media accounts for username: {colored(name, 'green', attrs=['bold'])}\n")
 
     for i in tqdm(sources, desc="Fetching accounts", leave=False):
         source = sources[i]
@@ -37,8 +37,10 @@ def hunt(name: str):
                 found.append(data)
         else:
             raise Exception("Unknown response handle")
+
+    print(f"\n[🌐] Found {colored(len(found), 'green', attrs=['bold'])} social media accounts for {colored(name, 'green', attrs=['bold'])} on the following platforms:\n")
         
     for user in found:
-        print(f"[{colored('*', 'green', attrs=['bold'])}] {colored(user['name'], 'green', attrs=['bold'])}: {user['url']}")
+        print(f"[{colored('✓', 'green', attrs=['bold'])}] {colored(user['name'], 'green', attrs=['bold'])}: {user['url']}")
 
-    print(f"\n[{colored('+', 'yellow', attrs=['bold'])}] Found a total of {colored(len(found), 'green', attrs=['bold'])} results")
+    print("\n✨ Happy connecting and exploring! ✨")
