@@ -14,7 +14,7 @@ headers = {
 
 def hunt(name: str):    
     found = []
-    print(f"[{colored('🔍', 'yellow', attrs=['bold'])}] Searching for social media accounts for username: {colored(name, 'green', attrs=['bold'])}\n")
+    print(f"[{colored('🔍', 'yellow', attrs=['bold'])}] Searching for social media accounts for username: {colored(name, 'green', attrs=['bold'])}")
 
     for i in tqdm(sources, ascii=" =", leave=False):
         source = sources[i]
@@ -42,7 +42,7 @@ def hunt(name: str):
             if 200 == response.status_code:
                 found.append(data)
 
-    print(f"\n[🌐] Found {colored(len(found), 'green', attrs=['bold'])} social media accounts for {colored(name, 'green', attrs=['bold'])} on the following platforms:\n")
+    print(f"[🌐] Found {colored(len(found), 'green', attrs=['bold'])} social media accounts for {colored(name, 'green', attrs=['bold'])} on the following platforms:\n")
 
     for user in found:
         print(f"[{colored('✓', 'green', attrs=['bold'])}] {colored(user['name'], 'green', attrs=['bold'])}: {user['url']}")
