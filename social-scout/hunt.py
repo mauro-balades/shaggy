@@ -1,6 +1,8 @@
 
 from sources import sources
+
 from tqdm import tqdm
+from termcolor import colored
 
 import logger
 
@@ -13,7 +15,9 @@ headers = {
 
 def hunt(name: str):    
     found = []
-    for i in tqdm(sources, desc="Fetching accounts", leave=True):
+    print(f"{colored('+', 'yellow', attrs=['bold'])} Searching for accounts with username {colored(name, 'green', attrs=['bold'])}\n")
+
+    for i in tqdm(sources, desc="Fetching accounts", leave=False):
         source = sources[i]
         url = source["url"].format(name)
         response = requests.get(url, headers=headers)
@@ -35,4 +39,6 @@ def hunt(name: str):
             raise Exception("Unknown response handle")
         
     for user in found:
-        print(f"{user['name']}: {user['url']}")
+        print(f"[{colored('*', 'green', attrs=['bold'])}] {colored(user['name'], 'green', attrs=['bold'])}: {user['url']}")
+
+    print(f"\n[{colored('+', 'yellow', attrs=['bold'])}] Found a total of {colored(len(found), 'green', attrs=['bold'])} results")
