@@ -104,6 +104,7 @@ sources = {
         "url": "https://community.wolfram.com/web/{}/home",
     },
     "WordPress": {
+        "errorUrl": "wordpress.com/typo/?subdomain=",
         "url": "https://{}.wordpress.com/",
     },
     "WordPressOrg": {
