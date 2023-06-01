@@ -1,11 +1,12 @@
-
 import sys
 
 from termcolor import colored, cprint
 from hunt import hunt
 
+
 def print_shaggy():
-    print(f"""
+    print(
+        f"""
                                                                                         ░░░░░░░░░░░░░░░░▄▄█▀▀██▄▄░░░░░░░
                                                                                         ░░░░░░░░░░░░░▄█▀▀░░░░░░░▀█░░░░░░
         {colored('          88                                                              ', 'green', attrs=['bold'])}      ░░░░░░░░░░░▄▀░░░░░░░░░░░░░█░░░░░
@@ -27,7 +28,9 @@ def print_shaggy():
                                                                                         █░░░█░░░░░░░░░░░░░░░░░░█▄░░░░░░░
                                                                                         
                                                                                         
-""")
+"""
+    )
+
 
 def main(argv):
     if len(argv) == 2:
@@ -38,6 +41,7 @@ def main(argv):
     else:
         print("A name hasn't been defined!")
         print("Usage: social-scout [name]")
+
 
 if __name__ == "__main__":
     main(sys.argv)

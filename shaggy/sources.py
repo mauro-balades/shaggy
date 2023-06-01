@@ -1,16 +1,15 @@
-
 sources = {
     "Telegram": {
-        "errorMsg": "<meta property=\"og:description\" content=\"\">",
+        "errorMsg": '<meta property="og:description" content="">',
         "url": "https://t.me/{}",
-        "urlMain": "https://telegram.org/",        
+        "urlMain": "https://telegram.org/",
     },
     # "Instagram": {
     #     "errorMsg": "Sorry, this page isn't available",
-    #     "url": "https://www.instagram.com/{}",      
+    #     "url": "https://www.instagram.com/{}",
     # },
     "Facebook": {
-        "url": "https://www.facebook.com/{}",    
+        "url": "https://www.facebook.com/{}",
         "api": "https://graph.facebook.com/{}/picture",
     },
     "GitHub": {
@@ -51,9 +50,7 @@ sources = {
     },
     "Reddit": {
         "errorMsg": "Sorry, nobody on Reddit goes by that name.",
-        "headers": {
-            "accept-language": "en-US,en;q=0.9"
-        },
+        "headers": {"accept-language": "en-US,en;q=0.9"},
         "url": "https://www.reddit.com/user/{}",
     },
     "Reisefrage": {
