@@ -1,8 +1,9 @@
-import sys
-
 from termcolor import colored, cprint
-from hunt import hunt
 
+from hunt import hunt
+from output import output_accounts
+
+import argparse
 
 def print_shaggy():
     print(
@@ -32,16 +33,21 @@ def print_shaggy():
     )
 
 
-def main(argv):
-    if len(argv) == 2:
-        print_shaggy()
+def main():
+    parser = argparse.ArgumentParser(description='Search for social media accounts.')
+    parser.add_argument('username', metavar='username', type=str,
+                    help='Username to search for')
+    parser.add_argument('--output', '-o', dest='output',
+                    help='Output file for the found accounts')
+    args = parser.parse_args()
+    print_shaggy()
 
-        name = argv[1]
-        hunt(name)
-    else:
-        print("A name hasn't been defined!")
-        print("Usage: social-scout [name]")
+    
+    name = args.username
+    accounts = hunt(name)
 
+    if args.output is not None:
+        output_accounts(args.output, accounts)
 
 if __name__ == "__main__":
-    main(sys.argv)
+    main()

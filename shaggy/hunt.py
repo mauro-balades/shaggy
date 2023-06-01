@@ -80,3 +80,5 @@ def hunt(name: str):
             f"[{colored('✓', 'green', attrs=['bold'])}] {colored(user['name'], 'green', attrs=['bold'])}: {user['url']}"
         )
 
+    return found
+

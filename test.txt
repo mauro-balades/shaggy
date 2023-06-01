@@ -1,0 +1,21 @@
+Telegram,https://t.me/user
+GitHub,https://www.github.com/user
+GitLab,https://gitlab.com/user
+Gitee,https://gitee.com/user
+ProductHunt,https://www.producthunt.com/@user
+PromoDJ,http://promodj.com/user
+PyPi,https://pypi.org/user/user
+Rajce.net,https://user.rajce.idnes.cz/
+Rate Your Music,https://rateyourmusic.com/~user
+Reddit,https://www.reddit.com/user/user
+Replit.com,https://replit.com/@user
+Tellonym.me,https://tellonym.me/user
+Tenor,https://tenor.com/users/user
+ThemeForest,https://themeforest.net/user/user
+TikTok,https://tiktok.com/@user
+Weblate,https://hosted.weblate.org/user/user/
+Wikidot,http://www.wikidot.com/user:info/user
+Wikipedia,https://en.wikipedia.org/wiki/Special:CentralAuth/user?uselang=qqx
+Windy,https://community.windy.com/user/user
+WordPress,https://user.wordpress.com/
+WordPressOrg,https://profiles.wordpress.org/user/
