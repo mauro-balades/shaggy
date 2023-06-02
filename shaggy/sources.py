@@ -4,10 +4,10 @@ sources = {
         "url": "https://t.me/{}",
         "urlMain": "https://telegram.org/",
     },
-    # "Instagram": {
-    #     "errorMsg": "Sorry, this page isn't available",
-    #     "url": "https://www.instagram.com/{}",
-    # },
+    "Instagram": {
+         "errorMsg": "Sorry, this page isn't available",
+         "url": "https://www.instagram.com/{}",
+    },
     "Facebook": {
         "url": "https://www.facebook.com/{}",
         "api": "https://graph.facebook.com/{}/picture",
