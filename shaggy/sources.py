@@ -107,4 +107,27 @@ sources = {
     "WordPressOrg": {
         "url": "https://profiles.wordpress.org/{}/",
     },
+    "LinkedIn": {
+        "url": "https://www.linkedin.com/in/{}/"
+    },
+    "Twitter": {
+        "url": "https://twitter.com/@{}",
+    },
+    "Spotify": {
+        "url": "https://open.spotify.com/user/{}"
+    },
+    "Archive.org": {
+        "url": "https://archive.org/details/@{}/"
+    },
+    "ask.fm": {
+        "url": "https://ask.fm/{}"
+    },
+    "Steam": {
+        "url": "https://steamcommunity.com/id/{}",
+        "headers": {"accept-language": "en-US,en;q=0.9"},
+        "errorMsg": ":: Error</title>"
+    },
+    "Snaptchat": {
+        "url": "https://www.snapchat.com/add/{}"
+    }
 }
