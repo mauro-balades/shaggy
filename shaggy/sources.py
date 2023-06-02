@@ -112,6 +112,8 @@ sources = {
     },
     "Twitter": {
         "url": "https://twitter.com/@{}",
+        "api": "https://nitter.net/{}",
+        "errorMsg": "<div class=\"error-panel\"><span>User ",
     },
     "Spotify": {
         "url": "https://open.spotify.com/user/{}"
@@ -122,6 +124,10 @@ sources = {
     "ask.fm": {
         "url": "https://ask.fm/{}"
     },
+    "Twitch": {
+        "url": "https://www.twitch.tv/{}",
+        "api": "https://m.twitch.tv/{}",
+    },
     "Steam": {
         "url": "https://steamcommunity.com/id/{}",
         "headers": {"accept-language": "en-US,en;q=0.9"},
@@ -129,5 +135,17 @@ sources = {
     },
     "Snaptchat": {
         "url": "https://www.snapchat.com/add/{}"
-    }
+    },
+    "Youtube channel": {
+        "url": "https://www.youtube.com/c/{}",
+        "headers": {
+            "Cookie": "CONSENT=YES+cb.20210418-17-p0.it+FX+917; "
+        },
+    },
+    "Youtube User": {
+        "headers": {
+            "Cookie": "CONSENT=YES+cb.20210418-17-p0.it+FX+917; "
+        },
+        "url": "https://www.youtube.com/user/{}",
+    },
 }
