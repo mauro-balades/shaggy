@@ -1,8 +1,7 @@
 sources = {
     "Telegram": {
-        "errorMsg": '<meta property="og:description" content="">',
+        "errorMsg": 'If you have <strong>Telegram',
         "url": "https://t.me/{}",
-        "urlMain": "https://telegram.org/",
     },
     "Instagram": {
          "errorMsg": "Sorry, this page isn't available",

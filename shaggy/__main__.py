@@ -35,7 +35,7 @@ def print_shaggy():
 
 def main():
     parser = argparse.ArgumentParser(description='Search for social media accounts.')
-    parser.add_argument('username', metavar='username', type=str,
+    parser.add_argument('username', metavar='username', nargs='+', type=str,
                     help='Username to search for')
     parser.add_argument('--output', '-o', dest='output',
                     help='Output file for the found accounts')
@@ -43,8 +43,8 @@ def main():
     print_shaggy()
 
     
-    name = args.username
-    accounts = hunt(name)
+    names = args.username
+    accounts = hunt(names)
 
     if args.output is not None:
         output_accounts(args.output, accounts)
