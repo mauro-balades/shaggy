@@ -1,7 +1,7 @@
 from termcolor import colored, cprint
 
-from hunt import hunt
-from output import output_accounts
+from shaggy.hunt import hunt
+from shaggy.output import output_accounts
 
 import argparse
 
@@ -49,5 +49,3 @@ def main():
     if args.output is not None:
         output_accounts(args.output, accounts)
 
-if __name__ == "__main__":
-    main()
