@@ -1,6 +1,5 @@
 from setuptools import setup
 
-
 with open("README.md", "r") as f:
     long_description = f.read()
 
@@ -20,7 +19,7 @@ setup(
     install_requires=required,
     entry_points={
         'console_scripts': [
-            'shaggy = shaggy.__main__:main',
+            'shaggy = shaggy:main',
         ],
     },
     license="MIT",
