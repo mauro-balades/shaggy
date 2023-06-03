@@ -55,8 +55,6 @@ def hunt(names: list):
                 response = requests.get(
                     url, headers={**headers, **source.get("headers", {})}
                 )
-
-                print(response.content)
             except requests.exceptions.RequestException:
                 continue
 
