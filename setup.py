@@ -8,7 +8,7 @@ with open('requirements.txt') as f:
 
 setup(
     name='shaggy',
-    version='1.0.3',
+    version='1.0.4',
     long_description=long_description,
     long_description_content_type="text/markdown",
     author='Mauro Baladés',
