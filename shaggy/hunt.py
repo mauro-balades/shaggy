@@ -13,7 +13,7 @@ headers = {
 }
 
 
-def hunt(names: list[str]):
+def hunt(names: list):
     # Create an empty list to store the found social media accounts
     found = []
 
