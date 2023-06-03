@@ -55,6 +55,8 @@ def hunt(names: list):
                 response = requests.get(
                     url, headers={**headers, **source.get("headers", {})}
                 )
+
+                print(response.content)
             except requests.exceptions.RequestException:
                 continue
 
@@ -96,7 +98,7 @@ def hunt(names: list):
 
     # Print a message indicating the number of found social media accounts
     print(
-        f"[🌐] Found {colored(len(found), 'green', attrs=['bold'])} social media accounts for {colored(niceNames, 'green', attrs=['bold'])} on the following platforms:\n"
+        f"\n[🌐] Found {colored(len(found), 'green', attrs=['bold'])} social media accounts for {colored(niceNames, 'green', attrs=['bold'])} on the following platforms:\n"
     )
 
     # Iterate through the found social media accounts and print their names and URLs
