@@ -4,8 +4,9 @@ sources = {
         "url": "https://telegram.me/{}",
     },
     "Instagram": {
-         "errorMsg": "Sorry, this page isn't available",
+         "errorMsg": "Nothing found!",
          "url": "https://www.instagram.com/{}",
+         "api": "https://www.picuki.com/profile/{}"
     },
     "Facebook": {
         "url": "https://www.facebook.com/{}",
